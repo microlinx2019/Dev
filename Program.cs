@@ -4,22 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Excese_Bank__1
+namespace Excese_Bank_2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int temp;
             Console.Write("Enter the first number: ");
             int num1 = int.Parse(Console.ReadLine());
             Console.Write("Enter the second number: ");
             int num2 = int.Parse(Console.ReadLine());
-            temp = num1;
-            num1 = num2;
-            num2 = temp;
-            Console.WriteLine("After swapping, the first number is: " + num1);
-            Console.WriteLine("the second number is: " + num2);
+            Console.Write("Enter the third number: ");
+            int num3 = int.Parse(Console.ReadLine());
+            int result = num1 * num2 * num3;
+            Console.WriteLine("The result is " + result);
             Console.ReadLine();
         }
     }
